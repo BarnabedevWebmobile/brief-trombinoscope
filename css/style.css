@@ -29,6 +29,11 @@ nav ul{
     list-style: none;
 }
 
+.promotion{
+    border: 2px;
+    border-color: #000;
+}
+
 .annee-promo{
     display: none;
 }
