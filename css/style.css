@@ -1,3 +1,29 @@
+body{
+    background-color: cadetblue;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+}
+
+/*menu de navigation*/
+
+.navigation{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h3{
+    margin: 0;
+}
+
+nav ul{
+    margin: 0;
+}
 /*menu déroulant*/
 nav ul{
     list-style: none;
@@ -12,3 +38,15 @@ nav > ul li:hover .annee-promo{
 }
 
 /*menu déroulant*/
+
+.search{
+    min-width: 450px;
+    max-height: 30px;
+    border-radius: 50px;
+}
+
+
+.profil .checkbox{
+    padding-left: 10px;
+}
+/*menu de navigation*/

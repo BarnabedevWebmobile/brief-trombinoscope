@@ -8,7 +8,7 @@
     <script src="js/script.js"></script>
 </head>
 <body>
-    <h1>Trombinoscope</h1>
+    <h1 class="titre">Trombinoscope de l'école du numérique</h1>
 
     <div class="navigation"> 
         <!--zone de navigation-->
@@ -16,7 +16,7 @@
             <!-- menu déroulant des années-->
             <ul class="annee">
                 <li class="deroulant">
-                    annee de promotion
+                    <h3>annee de promotion</h3>
                     <ul class="annee-promo">
                         <li>2022</li>
                         <li>2023</li>
@@ -26,7 +26,25 @@
             </ul>
         </nav>
 
-        
+        <input type="text" class="search" placeholder="search">
+        <nav class="profil">
+            <ul>
+                <li>
+                    <h3>profil</h3>
+                    <ul class="checkbox">
+                        <li>
+                            <input type="checkbox" name="front" id="front">
+                            <label for="front">front</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="back" id="back">
+                            <label for="back">back</label>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
     </div>
 
 </body>
