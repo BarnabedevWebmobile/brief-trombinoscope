@@ -1,0 +1,14 @@
+/*menu déroulant*/
+nav ul{
+    list-style: none;
+}
+
+.annee-promo{
+    display: none;
+}
+
+nav > ul li:hover .annee-promo{
+    display: block;
+}
+
+/*menu déroulant*/
