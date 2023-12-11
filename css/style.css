@@ -77,20 +77,22 @@ nav > ul li:hover .annee-promo{
     margin: 20px;
     width: 200px;
     height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 .card-name-promo{
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    margin: none;
 }
 .lien-onglet{
     display: flex;
 }
-  
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lien-onglet a{
     margin-left: 10px;
 }
