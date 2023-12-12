@@ -26,3 +26,5 @@ function nom(){
   function categorie(){
     
   }
+
+nom()
