@@ -75,13 +75,13 @@ nav > ul li:hover .annee-promo{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin: 20px;
-    width: 200px;
-    height: 250px;
+    width: 380px;
+    height: 430px;
   }
 .card-name-promo{
     display: flex;
     justify-content: space-between;
-    margin: none;
+    margin-top: 20px;
 }
 .lien-onglet{
     display: flex;
