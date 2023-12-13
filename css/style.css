@@ -50,6 +50,8 @@ nav > ul li:hover .annee-promo{
     max-height: 30px;
     border-radius: 50px;
 }
+
+
 /*search bar*/
 
 /*profil checkbox*/
@@ -87,6 +89,16 @@ nav > ul li:hover .annee-promo{
     display: flex;
 }
 
+.button-link{
+    border-radius: 5px;
+    background-color: #abaaaa;
+}
+
+.button-link:hover{
+    background-color: #caa0ed;
+    transition: 1s;
+}
+
 .image{
     display: flex;
     justify-content: center;
@@ -94,7 +106,11 @@ nav > ul li:hover .annee-promo{
 }
 
 .lien-onglet a{
+    text-decoration: none;
     margin-left: 10px;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
 }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -106,6 +122,11 @@ nav > ul li:hover .annee-promo{
     padding: 2px 16px;
   }
 /*mise en forme des cartes*/
+
+footer{
+    display: flex;
+    justify-content: center;
+}
 
 /* media query*/
 
@@ -134,9 +155,13 @@ nav > ul li:hover .annee-promo{
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         margin-left: 20px;
-        width: 200px;
-        height: 250px;
+        width: 230px;
+        height: 100%;
       }
+      .lien-onglet{
+        display: flex;
+        max-width: 150px;
+    }
 }
 
 /* media query*/

@@ -19,10 +19,10 @@
 nom()*/
 
 
-
+/** 
 fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
 
-.then(Response => Response.json()) /** transforme la reponse en json */
+.then(Response => Response.json()) /** transforme la reponse en json 
     .then ( data=>{
       console.log(data)
       console.log(data[0]["nom"])
@@ -384,71 +384,90 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[9]["link"];
       Apprenant1_cv.href = textAEcrire
 
+      console.log(data)
+      console.log(data[10]["nom"])
+      var Apprenant1_nom = document.getElementById('nom11');
+      
+      var textAEcrire  = data[10]["nom"];
+      Apprenant1_nom.innerHTML = textAEcrire
+      
+      var Apprenant1_prenom = document.getElementById('prenom11');
+      textAEcrire  = data[10]["prenom"];
+      Apprenant1_prenom.innerHTML = textAEcrire
+
+
+      var Apprenant1_annee = document.getElementById('annee11');
+      id_de_annee = data[10]["promotions"][0];
+      Apprenant1_annee.innerHTML = id_de_annee
+      
+      var Apprenant1_avatar = document.getElementById('avatar11');
+      textAEcrire  = data[10]["image"];
+      Apprenant1_avatar.src = textAEcrire
+
+      var Apprenant1_extrait = document.getElementById('extrait11');
+      textAEcrire  = data[10]["excerpt"]["rendered"];
+      Apprenant1_extrait.innerHTML = textAEcrire
+
+      var Apprenant1_portfolio = document.getElementById('portfolio11');
+      textAEcrire  = data[10]["portfolio"];
+      Apprenant1_portfolio.href = textAEcrire
+
+      var Apprenant1_cv = document.getElementById('cv11');
+      textAEcrire  = data[10]["link"];
+      Apprenant1_cv.href = textAEcrire
+
+      var Apprenant1_cv = document.getElementById('cv11');
+      textAEcrire  = data[10]["link"];
+      Apprenant1_cv.href = textAEcrire
+
+      console.log(data)
+      console.log(data[11]["nom"])
+      var Apprenant1_nom = document.getElementById('nom12');
+      
+      var textAEcrire  = data[11]["nom"];
+      Apprenant1_nom.innerHTML = textAEcrire
+      
+      var Apprenant1_prenom = document.getElementById('prenom12');
+      textAEcrire  = data[11]["prenom"];
+      Apprenant1_prenom.innerHTML = textAEcrire
+
+
+      var Apprenant1_annee = document.getElementById('annee12');
+      id_de_annee = data[11]["promotions"][0];
+      Apprenant1_annee.innerHTML = id_de_annee
+      
+      var Apprenant1_avatar = document.getElementById('avatar12');
+      textAEcrire  = data[11]["image"];
+      Apprenant1_avatar.src = textAEcrire
+
+      var Apprenant1_extrait = document.getElementById('extrait12');
+      textAEcrire  = data[11]["excerpt"]["rendered"];
+      Apprenant1_extrait.innerHTML = textAEcrire
+
+      var Apprenant1_portfolio = document.getElementById('portfolio12');
+      textAEcrire  = data[11]["portfolio"];
+      Apprenant1_portfolio.href = textAEcrire
+
+      var Apprenant1_cv = document.getElementById('cv12');
+      textAEcrire  = data[11]["link"];
+      Apprenant1_cv.href = textAEcrire
+
+      var Apprenant1_cv = document.getElementById('cv12');
+      textAEcrire  = data[11]["link"];
+      Apprenant1_cv.href = textAEcrire
     })
     .catch(error =>{
       console.log('erreur', error)
     });
 
-    function trouverAnnee(id_année, index){
-
-      var url_annee = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions/"+id_année
-  
-  fetch(url_annee)
-  .then((resp) => resp.json())
-  .then(function(data) {
-      
-      var Apprenant_annee = document.getElementById('annee'+index);
-      textAnnee  = data["name"];
-      Apprenant_annee.innerHTML = "Année : "+textAnnee
-      Apprenant_annee.style.display = "block"
-   
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
-  
-  
-  
-  }
-  
-  
-  fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants?promotions=15')
-
-  .then(Response => Response.json()) /** transforme la reponse en json */
-      .then ( data=>{
+    function trouverAnnee(){
+      fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions')
+      .then(data =>{
         console.log(data)
-        console.log(data[0]["nom"])
-        var Apprenant1_nom = document.getElementById('nom1');
         
-        var textAEcrire  = data[0]["nom"];
-        Apprenant1_nom.innerHTML = textAEcrire
-        
-        var Apprenant1_prenom = document.getElementById('prenom1');
-        textAEcrire  = data[0]["prenom"];
-        Apprenant1_prenom.innerHTML = textAEcrire
-  
-  
-        var Apprenant1_annee = document.getElementById('annee1');
-        id_de_annee = data[0]["promotions"][0];
-        Apprenant1_annee.innerHTML = id_de_annee
-        
-        var Apprenant1_avatar = document.getElementById('avatar1');
-        textAEcrire  = data[0]["image"];
-        Apprenant1_avatar.src = textAEcrire
-  
-        var Apprenant1_extrait = document.getElementById('extrait1');
-        textAEcrire  = data[0]["excerpt"]["rendered"];
-        Apprenant1_extrait.innerHTML = textAEcrire
-  
-        var Apprenant1_portfolio = document.getElementById('portfolio1');
-        textAEcrire  = data[0]["portfolio"];
-        Apprenant1_portfolio.href = textAEcrire
-  
-        var Apprenant1_cv = document.getElementById('cv1');
-        textAEcrire  = data[0]["link"];
-        Apprenant1_cv.href = textAEcrire
-
       })
-      .catch(error =>{
-        console.log('erreur', error)
-      });
+    }
+
+    trouverAnnee()
+
+    */
