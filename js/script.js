@@ -1,25 +1,4 @@
 
-/** fonction récupération de l'API */
-/**function nom(){
-    fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
-    .then(Response => Response.json()) /** transforme la reponse en json 
-    .then ( data=>{
-      console.log(data)
-      document.getElementById('nom').innerHTML=data.title;
-      
-    })
-    .catch(error =>{
-      console.log('erreur', error)
-    });
-  }
-  function categorie(){
-    
-  }
-
-nom()*/
-
-
-
 fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
 
 .then(Response => Response.json()) /** transforme la reponse en json */
@@ -28,6 +7,8 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       console.log(data[0]["nom"])
       var Apprenant1_nom = document.getElementById('nom1');
       
+      index=1
+
       var textAEcrire  = data[0]["nom"];
       Apprenant1_nom.innerHTML = textAEcrire
       
@@ -38,7 +19,7 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
 
       var Apprenant1_annee = document.getElementById('annee1');
       id_de_annee = data[0]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar1');
       textAEcrire  = data[0]["image"];
@@ -72,9 +53,10 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       Apprenant1_prenom.innerHTML = textAEcrire
 
 
+      index=2
       var Apprenant1_annee = document.getElementById('annee2');
       id_de_annee = data[1]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar2');
       textAEcrire  = data[1]["image"];
@@ -107,10 +89,10 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[2]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
-
+      index=3
       var Apprenant1_annee = document.getElementById('annee3');
       id_de_annee = data[2]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar3');
       textAEcrire  = data[2]["image"];
@@ -143,10 +125,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[3]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=4
 
       var Apprenant1_annee = document.getElementById('annee4');
       id_de_annee = data[3]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar4');
       textAEcrire  = data[3]["image"];
@@ -179,10 +162,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[4]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=5
 
       var Apprenant1_annee = document.getElementById('annee5');
       id_de_annee = data[4]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar5');
       textAEcrire  = data[4]["image"];
@@ -215,10 +199,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[5]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=6
 
       var Apprenant1_annee = document.getElementById('annee6');
       id_de_annee = data[5]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar6');
       textAEcrire  = data[5]["image"];
@@ -251,10 +236,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[6]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=7
 
       var Apprenant1_annee = document.getElementById('annee7');
       id_de_annee = data[6]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar7');
       textAEcrire  = data[6]["image"];
@@ -287,10 +273,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[7]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=8
 
       var Apprenant1_annee = document.getElementById('annee8');
       id_de_annee = data[7]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar8');
       textAEcrire  = data[7]["image"];
@@ -323,10 +310,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[8]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=9
 
       var Apprenant1_annee = document.getElementById('annee9');
       id_de_annee = data[8]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar9');
       textAEcrire  = data[8]["image"];
@@ -359,10 +347,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       textAEcrire  = data[9]["prenom"];
       Apprenant1_prenom.innerHTML = textAEcrire
 
+      index=10
 
       var Apprenant1_annee = document.getElementById('annee10');
       id_de_annee = data[9]["promotions"][0];
-      Apprenant1_annee.innerHTML = id_de_annee
+      trouverAnnee(id_de_annee, index)
       
       var Apprenant1_avatar = document.getElementById('avatar10');
       textAEcrire  = data[9]["image"];
@@ -389,28 +378,7 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       console.log('erreur', error)
     });
 
-    function trouverAnnee(id_année, index){
 
-      var url_annee = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions/"+id_année
-  
-  fetch(url_annee)
-  .then((resp) => resp.json())
-  .then(function(data) {
-      
-      var Apprenant_annee = document.getElementById('annee'+index);
-      textAnnee  = data["name"];
-      Apprenant_annee.innerHTML = "Année : "+textAnnee
-      Apprenant_annee.style.display = "block"
-   
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
-  
-  
-  
-  }
-  
   
   fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants?promotions=15')
 
@@ -427,10 +395,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         textAEcrire  = data[0]["prenom"];
         Apprenant1_prenom.innerHTML = textAEcrire
   
+        index=11
   
         var Apprenant1_annee = document.getElementById('annee11');
         id_de_annee = data[0]["promotions"][0];
-        Apprenant1_annee.innerHTML = id_de_annee
+        trouverAnnee(id_de_annee, index)
         
         var Apprenant1_avatar = document.getElementById('avatar11');
         textAEcrire  = data[0]["image"];
@@ -461,11 +430,12 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         var Apprenant1_prenom = document.getElementById('prenom12');
         textAEcrire  = data[1]["prenom"];
         Apprenant1_prenom.innerHTML = textAEcrire
-  
+        
+        index=12
   
         var Apprenant1_annee = document.getElementById('annee12');
         id_de_annee = data[1]["promotions"][0];
-        Apprenant1_annee.innerHTML = id_de_annee
+        trouverAnnee(id_de_annee, index)
         
         var Apprenant1_avatar = document.getElementById('avatar12');
         textAEcrire  = data[1]["image"];
@@ -496,11 +466,12 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         var Apprenant1_prenom = document.getElementById('prenom13');
         textAEcrire  = data[2]["prenom"];
         Apprenant1_prenom.innerHTML = textAEcrire
-  
+
+        index=13
   
         var Apprenant1_annee = document.getElementById('annee13');
         id_de_annee = data[2]["promotions"][0];
-        Apprenant1_annee.innerHTML = id_de_annee
+        trouverAnnee(id_de_annee, index)
         
         var Apprenant1_avatar = document.getElementById('avatar13');
         textAEcrire  = data[2]["image"];
@@ -532,10 +503,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         textAEcrire  = data[3]["prenom"];
         Apprenant1_prenom.innerHTML = textAEcrire
   
+        index=14
   
         var Apprenant1_annee = document.getElementById('annee14');
         id_de_annee = data[3]["promotions"][0];
-        Apprenant1_annee.innerHTML = id_de_annee
+        trouverAnnee(id_de_annee, index)
         
         var Apprenant1_avatar = document.getElementById('avatar14');
         textAEcrire  = data[3]["image"];
@@ -567,10 +539,11 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         textAEcrire  = data[4]["prenom"];
         Apprenant1_prenom.innerHTML = textAEcrire
   
-  
+        index=15
+
         var Apprenant1_annee = document.getElementById('annee15');
         id_de_annee = data[4]["promotions"][0];
-        Apprenant1_annee.innerHTML = id_de_annee
+        trouverAnnee(id_de_annee, index)
         
         var Apprenant1_avatar = document.getElementById('avatar15');
         textAEcrire  = data[4]["image"];
@@ -596,10 +569,37 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         console.log('erreur', error)
       });
 
+      function trouverAnnee(id_année, index){
+
+        var url_annee = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions/"+id_année
+    
+    fetch(url_annee)
+    .then((resp) => resp.json())
+    .then(function(data) {
+      console.log(data.name)
+        
+        var Apprenant_annee = document.getElementById('annee'+index);
+        console.log(Apprenant_annee)
+        textAnnee  = data.name;
+        Apprenant_annee.innerHTML = "Année : "+textAnnee
+        Apprenant_annee.style.display = "block"
+     
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+    
+    
+    
+    }
+    
+
+      /** 
       function promo1(){
 
         var promotions1=document.getElementById('promo1');
         var promotions2=document.getElementById('promo2');
+        
         promotions1.classlist.remove('hide');
         promotions1.classlist.add('show');
 
@@ -620,3 +620,4 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         promotions1.classlist.add('hide');
 
       }
+      */
