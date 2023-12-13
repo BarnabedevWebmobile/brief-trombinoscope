@@ -418,37 +418,205 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
       .then ( data=>{
         console.log(data)
         console.log(data[0]["nom"])
-        var Apprenant1_nom = document.getElementById('nom1');
+        var Apprenant1_nom = document.getElementById('nom11');
         
         var textAEcrire  = data[0]["nom"];
         Apprenant1_nom.innerHTML = textAEcrire
         
-        var Apprenant1_prenom = document.getElementById('prenom1');
+        var Apprenant1_prenom = document.getElementById('prenom11');
         textAEcrire  = data[0]["prenom"];
         Apprenant1_prenom.innerHTML = textAEcrire
   
   
-        var Apprenant1_annee = document.getElementById('annee1');
+        var Apprenant1_annee = document.getElementById('annee11');
         id_de_annee = data[0]["promotions"][0];
         Apprenant1_annee.innerHTML = id_de_annee
         
-        var Apprenant1_avatar = document.getElementById('avatar1');
+        var Apprenant1_avatar = document.getElementById('avatar11');
         textAEcrire  = data[0]["image"];
         Apprenant1_avatar.src = textAEcrire
   
-        var Apprenant1_extrait = document.getElementById('extrait1');
+        var Apprenant1_extrait = document.getElementById('extrait11');
         textAEcrire  = data[0]["excerpt"]["rendered"];
         Apprenant1_extrait.innerHTML = textAEcrire
   
-        var Apprenant1_portfolio = document.getElementById('portfolio1');
+        var Apprenant1_portfolio = document.getElementById('portfolio11');
         textAEcrire  = data[0]["portfolio"];
         Apprenant1_portfolio.href = textAEcrire
   
-        var Apprenant1_cv = document.getElementById('cv1');
+        var Apprenant1_cv = document.getElementById('cv11');
         textAEcrire  = data[0]["link"];
         Apprenant1_cv.href = textAEcrire
 
+        var Apprenant1_cv = document.getElementById('cv11');
+        textAEcrire  = data[0]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[1]["nom"])
+        var Apprenant1_nom = document.getElementById('nom12');
+        
+        var textAEcrire  = data[1]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom12');
+        textAEcrire  = data[1]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+  
+        var Apprenant1_annee = document.getElementById('annee12');
+        id_de_annee = data[1]["promotions"][0];
+        Apprenant1_annee.innerHTML = id_de_annee
+        
+        var Apprenant1_avatar = document.getElementById('avatar12');
+        textAEcrire  = data[1]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait12');
+        textAEcrire  = data[1]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio12');
+        textAEcrire  = data[1]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv12');
+        textAEcrire  = data[1]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv12');
+        textAEcrire  = data[1]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[2]["nom"])
+        var Apprenant1_nom = document.getElementById('nom13');
+        
+        var textAEcrire  = data[2]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom13');
+        textAEcrire  = data[2]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+  
+        var Apprenant1_annee = document.getElementById('annee13');
+        id_de_annee = data[2]["promotions"][0];
+        Apprenant1_annee.innerHTML = id_de_annee
+        
+        var Apprenant1_avatar = document.getElementById('avatar13');
+        textAEcrire  = data[2]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait13');
+        textAEcrire  = data[2]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio13');
+        textAEcrire  = data[2]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv13');
+        textAEcrire  = data[2]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv13');
+        textAEcrire  = data[2]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[3]["nom"])
+        var Apprenant1_nom = document.getElementById('nom14');
+        
+        var textAEcrire  = data[3]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom14');
+        textAEcrire  = data[3]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+  
+        var Apprenant1_annee = document.getElementById('annee14');
+        id_de_annee = data[3]["promotions"][0];
+        Apprenant1_annee.innerHTML = id_de_annee
+        
+        var Apprenant1_avatar = document.getElementById('avatar14');
+        textAEcrire  = data[3]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait14');
+        textAEcrire  = data[3]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio14');
+        textAEcrire  = data[3]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv14');
+        textAEcrire  = data[3]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv14');
+        textAEcrire  = data[3]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[4]["nom"])
+        var Apprenant1_nom = document.getElementById('nom15');
+        
+        var textAEcrire  = data[4]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom15');
+        textAEcrire  = data[4]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+  
+        var Apprenant1_annee = document.getElementById('annee15');
+        id_de_annee = data[4]["promotions"][0];
+        Apprenant1_annee.innerHTML = id_de_annee
+        
+        var Apprenant1_avatar = document.getElementById('avatar15');
+        textAEcrire  = data[4]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait15');
+        textAEcrire  = data[4]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio15');
+        textAEcrire  = data[4]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv15');
+        textAEcrire  = data[4]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv15');
+        textAEcrire  = data[4]["link"];
+        Apprenant1_cv.href = textAEcrire
       })
       .catch(error =>{
         console.log('erreur', error)
       });
+
+      function promo1(){
+
+        var promotions1=document.getElementById('promo1');
+        var promotions2=document.getElementById('promo2');
+        promotions1.classlist.remove('hide');
+        promotions1.classlist.add('show');
+
+        promotions2.classlist.remove('show');
+        promotions2.classlist.add('hide');
+
+      }
+
+      function promo2(){
+
+        var promotions1=document.getElementById('promo1');
+        var promotions2=document.getElementById('promo2');
+        
+        promotions2.classlist.remove('hide');
+        promotions2.classlist.add('show');
+
+        promotions1.classlist.remove('show');
+        promotions1.classlist.add('hide');
+
+      }
