@@ -1,4 +1,3 @@
-
 fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
 
 .then(Response => Response.json()) /** transforme la reponse en json */
@@ -564,6 +563,187 @@ fetch('https://portfolios.ern-mende.fr/wp-json/wp/v2/apprenants')
         var Apprenant1_cv = document.getElementById('cv15');
         textAEcrire  = data[4]["link"];
         Apprenant1_cv.href = textAEcrire
+
+        console.log(data[5]["nom"])
+        var Apprenant1_nom = document.getElementById('nom16');
+        
+        var textAEcrire  = data[5]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom16');
+        textAEcrire  = data[5]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+        index=16
+
+        var Apprenant1_annee = document.getElementById('annee16');
+        id_de_annee = data[5]["promotions"][0];
+        trouverAnnee(id_de_annee, index)
+        
+        var Apprenant1_avatar = document.getElementById('avatar16');
+        textAEcrire  = data[5]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait16');
+        textAEcrire  = data[5]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio16');
+        textAEcrire  = data[5]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv16');
+        textAEcrire  = data[5]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv16');
+        textAEcrire  = data[5]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[6]["nom"])
+        var Apprenant1_nom = document.getElementById('nom17');
+        
+        var textAEcrire  = data[6]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom17');
+        textAEcrire  = data[6]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+        index=17
+
+        var Apprenant1_annee = document.getElementById('annee17');
+        id_de_annee = data[6]["promotions"][0];
+        trouverAnnee(id_de_annee, index)
+        
+        var Apprenant1_avatar = document.getElementById('avatar17');
+        textAEcrire  = data[6]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait17');
+        textAEcrire  = data[6]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio17');
+        textAEcrire  = data[6]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv17');
+        textAEcrire  = data[6]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv17');
+        textAEcrire  = data[6]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[7]["nom"])
+        var Apprenant1_nom = document.getElementById('nom18');
+        
+        var textAEcrire  = data[7]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom18');
+        textAEcrire  = data[7]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+        index=18
+
+        var Apprenant1_annee = document.getElementById('annee18');
+        id_de_annee = data[7]["promotions"][0];
+        trouverAnnee(id_de_annee, index)
+        
+        var Apprenant1_avatar = document.getElementById('avatar18');
+        textAEcrire  = data[7]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait18');
+        textAEcrire  = data[7]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio18');
+        textAEcrire  = data[7]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv18');
+        textAEcrire  = data[7]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv18');
+        textAEcrire  = data[7]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[8]["nom"])
+        var Apprenant1_nom = document.getElementById('nom19');
+        
+        var textAEcrire  = data[8]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom19');
+        textAEcrire  = data[8]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+        index=19
+
+        var Apprenant1_annee = document.getElementById('annee19');
+        id_de_annee = data[8]["promotions"][0];
+        trouverAnnee(id_de_annee, index)
+        
+        var Apprenant1_avatar = document.getElementById('avatar19');
+        textAEcrire  = data[8]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait19');
+        textAEcrire  = data[8]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio19');
+        textAEcrire  = data[8]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv19');
+        textAEcrire  = data[8]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv19');
+        textAEcrire  = data[8]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        console.log(data[9]["nom"])
+        var Apprenant1_nom = document.getElementById('nom20');
+        
+        var textAEcrire  = data[9]["nom"];
+        Apprenant1_nom.innerHTML = textAEcrire
+        
+        var Apprenant1_prenom = document.getElementById('prenom20');
+        textAEcrire  = data[9]["prenom"];
+        Apprenant1_prenom.innerHTML = textAEcrire
+  
+        index=19
+
+        var Apprenant1_annee = document.getElementById('annee20');
+        id_de_annee = data[9]["promotions"][0];
+        trouverAnnee(id_de_annee, index)
+        
+        var Apprenant1_avatar = document.getElementById('avatar20');
+        textAEcrire  = data[9]["image"];
+        Apprenant1_avatar.src = textAEcrire
+  
+        var Apprenant1_extrait = document.getElementById('extrait20');
+        textAEcrire  = data[9]["excerpt"]["rendered"];
+        Apprenant1_extrait.innerHTML = textAEcrire
+  
+        var Apprenant1_portfolio = document.getElementById('portfolio20');
+        textAEcrire  = data[9]["portfolio"];
+        Apprenant1_portfolio.href = textAEcrire
+  
+        var Apprenant1_cv = document.getElementById('cv20');
+        textAEcrire  = data[9]["link"];
+        Apprenant1_cv.href = textAEcrire
+
+        var Apprenant1_cv = document.getElementById('cv20');
+        textAEcrire  = data[9]["link"];
+        Apprenant1_cv.href = textAEcrire
+
       })
       .catch(error =>{
         console.log('erreur', error)

@@ -86,7 +86,9 @@ nav > ul li:hover .annee-promo{
     margin-top: 20px;
 }
 .lien-onglet{
+
     display: flex;
+    justify-content: space-around;
 }
 
 .button-link{
@@ -105,12 +107,13 @@ nav > ul li:hover .annee-promo{
     align-items: center;
 }
 
+
 .lien-onglet a{
     text-decoration: none;
     margin-left: 10px;
     color: #000;
     display: flex;
-    justify-content: space-around;
+    
 }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
@@ -167,8 +170,7 @@ footer{
         height: 100%;
       }
       .lien-onglet{
-        display: flex;
-        max-width: 150px;
+        max-width: 100%;
     }
 }
 
