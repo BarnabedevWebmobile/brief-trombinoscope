@@ -103,20 +103,20 @@ const individu = document.getElementById('promo')
       console.log(error);
     }); 
 
-    function trouverAnnee(id_annee, index){
-    var url_annee = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions/"
+  //   function trouverAnnee(id_annee, index){
+  //   var url_annee = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions/"
   
-  fetch(url_annee)
-  .then((resp) => resp.json())
-  .then(function(data) {
+  // fetch(url_annee)
+  // .then((resp) => resp.json())
+  // .then(function(data) {
       
-      var Apprenant_annee = document.getElementById('annee'+index);
-      textAnnee  = data["name"];
-      Apprenant_annee.innerHTML = "Année : "+textAnnee
-      Apprenant_annee.style.display = "block"
-  })
-  .catch(function(error) {
-    console.log(error);
-  });
+  //     var Apprenant_annee = document.getElementById('annee'+index);
+  //     textAnnee  = data["name"];
+  //     Apprenant_annee.innerHTML = "Année : "+textAnnee
+  //     Apprenant_annee.style.display = "block"
+  // })
+  // .catch(function(error) {
+  //   console.log(error);
+  // });
   
-  }
+  // }
