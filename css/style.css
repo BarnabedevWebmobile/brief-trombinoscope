@@ -25,9 +25,18 @@ nav ul{
     margin-bottom: 20px;
 }
 /*menu déroulant*/
-nav ul{
-    list-style: none;
-}
+label {
+    font-family: sans-serif;
+    font-size: 1rem;
+    padding-right: 10px;
+  }
+  
+  select {
+    font-size: 0.9rem;
+    padding: 2px 5px;
+    max-height: 25px;
+  }
+  
 
 .promotion{
     border: 2px;
@@ -66,6 +75,8 @@ nav > ul li:hover .annee-promo{
 
 .card1{
     display: flex;
+    width: 100%;
+    max-width: 2000px;
 }
 .sous-div{
     display: flex;
@@ -78,8 +89,9 @@ nav > ul li:hover .annee-promo{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     margin: 20px;
-    width: 340px;
-    height: 500px;
+    width: 20%;
+    min-height: 400px;
+    height: 100%
   }
 .card-name-promo{
     display: flex;
@@ -93,6 +105,7 @@ nav > ul li:hover .annee-promo{
 }
 
 .button-link{
+    max-height: 20px;
     border-radius: 5px;
     background-color: #abaaaa;
 }
@@ -106,8 +119,14 @@ nav > ul li:hover .annee-promo{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 250px;
+    height: auto;
+    margin: auto;
 }
 
+img{
+    width: 100px;
+}
 
 .lien-onglet a{
     text-decoration: none;
@@ -182,6 +201,25 @@ footer{
     }
 }
 @media (max-width: 1330px){
+    .sous-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        margin-left: 20px;
+        width: 300px;
+        height: 100%;
+      }
 }  
 /* media query*/
