@@ -71,25 +71,14 @@ nav > ul li:hover .annee-promo{
 
 /*menu de navigation*/
 
-/*zone des cartes*/
-
-.card1{
-    display: flex;
-    width: 100%;
-    max-width: 2000px;
-}
-.sous-div{
-    display: flex;
-}
-/*zone des cartes*/
-
 /*mise en forme des cartes*/
 .card {
     /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3);
     transition: 0.3s;
-    margin: 20px;
+    margin: 15px;
     width: 20%;
+    max-width: 340px;
     min-height: 400px;
     height: 100%
   }
@@ -97,6 +86,14 @@ nav > ul li:hover .annee-promo{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.name p{
+    margin-left: 5px;
 }
 .lien-onglet{
 
@@ -137,7 +134,7 @@ img{
 }
   /* On mouse-over, add a deeper shadow */
   .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
   }
   
   /* Add some padding inside the card container */
@@ -145,6 +142,22 @@ img{
     padding: 2px 16px;
   }
 /*mise en forme des cartes*/
+
+/*zone des cartes*/
+
+.card1{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2px;
+    justify-content: center;
+}
+.sous-div{
+    display: flex;
+}
+/*zone des cartes*/
+
+
 
 .hide{
     display: none;
@@ -173,10 +186,6 @@ footer{
         margin-bottom: 50px;
     }
 
-    .sous-div{
-        display: flex;
-        flex-direction: column;
-    }
     .search{
         min-width: 350px;
         max-height: 30px;
@@ -184,7 +193,7 @@ footer{
     }
     .card1{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
@@ -201,14 +210,10 @@ footer{
     }
 }
 @media (max-width: 1330px){
-    .sous-div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
     .card1{
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
