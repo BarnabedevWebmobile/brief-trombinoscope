@@ -13,33 +13,26 @@
     <div class="navigation"> 
     
         <!-- menu déroulant des années-->  
-        <select name="promotion" id="promotion-select">
-            <option value="2022-2023">2022-2023</option>
-            <option value="2023-2024">2023-2024</option>
+        <select class="search-years" name="promotion" id="promotion-select">
+            <option id="promotion" value="all">toutes les promos</option>
         </select>
       
         <!--barre de recherches-->
-        <div class="recherche">
-        <input type="text" class="search" placeholder="search" ><button onclick="search">search</button>
+        <div>
+            <input type="search" class="search" id="search" name="advance"/><button class="search-btn">search</button>
         </div>
+        
         <!--barre de recherches-->
 
         <!--colone des profils-->
         <nav class="profil">
             <ul>
                 <li>
-                    <h3>Profil</h3>
+                    <h3>Compétences</h3>
 
                     <!--zone des checkbox-->
-                    <ul class="checkbox">
-                        <li>
-                            <input type="checkbox" name="front" id="front">
-                            <label for="front">front</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" name="back" id="back">
-                            <label for="back">back</label>
-                        </li>
+                    <ul class="checkbox" id="checkbox">
+
                     </ul>
                     <!--zone des checkbox-->
                 </li>
