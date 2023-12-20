@@ -35,7 +35,7 @@ const individu = document.getElementById('promo')
     .then((data) => {
       let apprenants = data;
       console.log(apprenants) 
-
+      var index = 0;
       /**
        * les datas récupéré par fetch sont récupérés dans la variables apprenants qui vas être ciblé pour l'écriture des cartes
        */
@@ -54,7 +54,8 @@ const individu = document.getElementById('promo')
          */
 
         let card= document.createElement('div');/** variable card créer une div en HTML */
-        card.className = 'card'; /** ajoute a la variable card une class CSS */
+        card.id = 'cards'+index+''
+        card.className = 'card show'; /** ajoute a la variable card une class CSS */
         individu.appendChild(card); /** card est une parti de la constante individu, ajoute card a individu*/
 
         let card_head= document.createElement('div');/** variable card créer une div en HTML */
@@ -86,6 +87,7 @@ const individu = document.getElementById('promo')
          names.appendChild(prenom);
 
          let annees = document.createElement('p');
+         annees.id = 'annees'
          annees.innerHTML = `${apprenant.promotions}`;
          promotions.appendChild(annees);
 
@@ -118,8 +120,8 @@ const individu = document.getElementById('promo')
          liens.appendChild(portfolio3);
 
          let portfolio_liens = document.createElement('a');
-         portfolio_liens.href = `${apprenant.portfolio}`;/** cible l'attribut html href dans lequel est écrit le lien vers le site externe
-          récupérer dans l'api */
+         portfolio_liens.href = `${apprenant.portfolio}`;/** cible l'attribut html href dans lequel est écrit 
+         le lien vers le site externe récupérer dans l'api */
          portfolio_liens.innerHTML = "portfolio";
          portfolio.appendChild(portfolio_liens);
 
@@ -132,7 +134,8 @@ const individu = document.getElementById('promo')
          portfolio_liens3.href = `${apprenant.portfolio}`;
          portfolio_liens3.innerHTML = "cv";
          portfolio3.appendChild(portfolio_liens3);
-         
+        
+        index ++;
         
 
       })        
@@ -147,6 +150,7 @@ const individu = document.getElementById('promo')
     const promotions = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions"
     const select = document.createDocumentFragment();
     const trie = document.getElementById('promotion-select')
+    const alter = document.getElementById('promoteur')
 
     fetch(promotions)
       .then((response) => {
@@ -154,14 +158,17 @@ const individu = document.getElementById('promo')
       })
         .then((data) => {
           let proms = data;
+          var index = 0;
 
           proms.map(function(promotion){
           console.log(promotion.name) 
-
+          index ++;
           let opt = document.createElement('option');
-          opt.value = `${promotion.name}`;
+          opt.value = `${promotion.id}`;
+          opt.id = 'promotion'+index;
           opt.innerHTML = `${promotion.name}`;
           trie.appendChild(opt);
+          
             
           })
           trie.appendChild(select);
@@ -180,7 +187,7 @@ const individu = document.getElementById('promo')
           })
             .then((data) => {
               let competences = data;
-    
+              
               competences.map(function(competence){
               console.log(competence) 
 
@@ -205,21 +212,22 @@ const individu = document.getElementById('promo')
               console.log(error);
             });
 
+            function change(){
+            const selecteur = document.getElementById('promotion-select')
+            selecteur.addEventListener('change', annees1, true);
+          }
+    function annees1(apprenant){
+      var promo = document.getElementById('promotion'+index+'')
+      var annees1 = document.getElementById('annees')
+      var cards = document.getElementById('cards'+index+'')
 
-  //   function trouverAnnee(id_annee, index){
-  //   var url_annee = "https://portfolios.ern-mende.fr/wp-json/wp/v2/promotions/"
-  
-  // fetch(url_annee)
-  // .then((resp) => resp.json())
-  // .then(function(data) {
-      
-  //     var Apprenant_annee = document.getElementById('annee'+index);
-  //     textAnnee  = data["name"];
-  //     Apprenant_annee.innerHTML = "Année : "+textAnnee
-  //     Apprenant_annee.style.display = "block"
-  // })
-  // .catch(function(error) {
-  //   console.log(error);
-  // });
-  
-  // }
+      console.log(promo1.value)
+
+      if (promo1.value!=annees1){
+        cards.classList.remove('show');
+        cards.classList.add('hide');
+      }else{
+
+      }
+
+    }
